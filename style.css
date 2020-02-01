@@ -1,0 +1,143 @@
+body {
+  background-color: #efefef;
+}
+#todolist {
+  font-family: Oxygen;
+}
+#todolist .header {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 22px;
+}
+#todolist .header span {
+  color: #fff;
+  position: absolute;
+  background-color: #ee5253;;
+  padding: 10px 100px;
+  left: 0;
+  right: 0;
+  width: 410px;
+  margin: auto;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.sidebar ul {
+  position: absolute;
+  list-style: none;
+}
+.sidebar ul li {
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sidebar ul > li {
+  transition: all 0.3s linear;
+}
+.sidebar ul li:hover {
+  transform: scale(1.2);
+}
+.sidebar .red {
+  background-color: #ee5253;
+}
+.sidebar .blue {
+  background-color: #2e86de;
+}
+.sidebar .green {
+  background-color: #10ac84;
+}
+.sidebar .pink {
+  background-color: #f368e0;
+}
+.sidebar .yellow {
+  background-color: #ff9f43;
+}
+#todolist .body {
+  text-align: center;
+  padding-top: 70px;
+}
+#todolist .body .inputitem, #todolist .additembtn {
+  width: 500px;
+  font-size: 15px;
+  font-family: Oxygen;
+  background-color: #fff;
+  border: none;
+  border: 1px solid transparent;
+  padding: 10px;
+  transition: all 0.4s linear;
+}
+#todolist .body .inputitem:focus {
+  border: 1px solid #ddd;
+}
+#todolist .body .inputitem::placeholder {
+  font-size: 15px;
+}
+#todolist .additembtn {
+  width: initial;
+  color: #fff;
+  background-color: #444;
+  cursor: pointer;
+}
+#todolist .results {
+  width: 610px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: left;
+  padding-top: 30px;
+}
+#todolist .results .item {
+  text-align: left;
+  font-family: Oxygen;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 2px;
+  transition: all 0.3s linear;
+}
+#todolist .results .item:hover {
+  background-color: #888 !important;
+}
+#todolist .results .item .data {
+  cursor: pointer;
+}
+#todolist .results p {
+  margin: 5px auto;
+}
+#todolist .results .item:nth-child(odd) {
+  background-color: #cecece;
+}
+#todolist .results span {
+  float: right;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding-top: 200px;
+  margin: auto;
+  z-index: 99999;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+.modal .modalInput {
+  border: 1px solid #ddd;
+  box-shadow: none;
+  height:25px;
+  font-weight: normal;
+  font-family: Oxygen;
+}
+.modal button {
+  background-color: #888;
+  border: 1px solid #888;
+  padding: 5px 5px;
+  font-family: Oxygen;
+  cursor: pointer;
+}
