@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <title>ToDo List</title>
+  </head>
+  <body>
+	<div class="modal">
+		<input class="modalInput">
+		<button class="modalEditBtn">Edit</button>
+		<button class="modalCloseBtn">Cancel</button>
+	</div>
+	<div id="todolist">
+	  <div class="container">
+		<div class="sidebar">
+			<ul class="colors">
+				<li class="red"></li>
+				<li class="yellow"></li>
+				<li class="green"></li>
+				<li class="pink"></li>
+				<li class="blue"></li>
+			</ul>
+		</div>
+		<div class="header">
+			<span class="alert"></span>
+		</div>
+		<div class="body">
+			<div class="additem">
+				<input type="text" class="inputitem" placeholder="Add your items...">
+				<button class="additembtn">Add Item</button>
+			</div>
+			<div class="results"></div>
+		</div>
+	  </div>
+	 </div>
+  <script type="text/javascript" src="script.js"></script>
+ </body>
+</html>
